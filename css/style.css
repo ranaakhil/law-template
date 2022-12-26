@@ -361,6 +361,7 @@ input,textarea:focus {
     display: flex;
     gap: 2rem;
     margin-top: 2rem;
+    align-items: center;
 }
 .section2 .social-icon a{
     color: var(--clr-lightbrown);
@@ -528,11 +529,12 @@ input,textarea:focus {
     gap: 2rem;
     
 }
-.section5 .testimonial-contents{
+.section5 .item{
     max-width: 1000px;
+    margin-inline:  auto;
     text-align: center;
 }
-.section5 .testimonial-contents p{
+.section5 .item p{
     color: var(--clr-darkgray);
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -543,16 +545,28 @@ input,textarea:focus {
     left: 49.8%;
     height: 150px;
 }
-.section5 .slider{
-    max-width: 50px;
+.section5 .owl-prev{
+    /* max-width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50px;
-    background-color: var(--clr-lightbrown);
+    min-height: 50px; */
 }
-.section5 .slider i{
+.section5 .owl-prev span{
+    position: absolute;
+    left: -2%;
+    top: 8%;
     color: var(--clr-white);
+    background-color: #a29060;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.section5 .owl-next span{
+    position: absolute;
+    right: -2%;
+    top: 8%;
+    color: var(--clr-white);
+    background-color: #a29060;
     font-size: 1.5rem;
     padding: 1rem;
 }
@@ -839,4 +853,14 @@ hr{
     padding: 2rem;
     font-size: 1rem;
     color: var(--clr-white);
+}
+
+/* making manual slider with css */
+.section5 .container .Testimonials-flex{
+   display: flex;
+   overflow: hidden;
+   width: 100%;
+}
+.testimonial-contents{
+    display: none;
 }

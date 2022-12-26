@@ -15,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre&family=Montserrat:wght@100;400&family=Noto+Serif:wght@700&family=Rubik:wght@400;500;600;700&family=Tiro+Tamil&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 </head>
 
 <body>
@@ -43,7 +45,7 @@
                 </div>
                 <button class="btn-mobile-nav">
                     <i class="icon-mobile-nav fa-solid fa-bars" name="menu-outline"></i>
-                    <i class="icon-mobile-nav fa-solid fa-xmark"name="close-outline"></i>
+                    <i class="icon-mobile-nav fa-solid fa-xmark" name="close-outline"></i>
                 </button>
             </div>
         </header>
@@ -173,7 +175,7 @@
                                             <i class="fa-solid fa-pen-clip"></i>
                                         </div>
                                         <div class="title">
-                                            <span>Intellectual </br> Property</span>
+                                            <span>Intellectual <br> Property</span>
                                         </div>
                                     </div>
                                     <span class="plus">+</span>
@@ -184,7 +186,7 @@
                                             <i class="fa-solid fa-bag-shopping"></i>
                                         </div>
                                         <div class="title">
-                                            <span>business </br> Litigation</span>
+                                            <span>business <br> Litigation</span>
                                         </div>
                                     </div>
                                     <span class="plus">+</span>
@@ -195,7 +197,7 @@
                                             <i class="fa-regular fa-user"></i>
                                         </div>
                                         <div class="title">
-                                            <span>Personal </br> Injury</span>
+                                            <span>Personal <br> Injury</span>
                                         </div>
                                     </div>
                                     <span class="plus">+</span>
@@ -206,7 +208,7 @@
                                             <i class="fa-regular fa-thumbs-up"></i>
                                         </div>
                                         <div class="title">
-                                            <span>Vivil </br> law</span>
+                                            <span>Vivil <br> law</span>
                                         </div>
                                     </div>
                                     <span class="plus">+</span>
@@ -224,7 +226,7 @@
         <section class="section5">
             <span class="verticale-line line"></span>
             <div class="container">
-                <span class="slider slid-abs"><i class="fa-regular fa-less-than"></i></span>
+                <!-- <span class="slider slid-abs" onclick="controller(-1)"><i class="fa-regular fa-less-than"></i></span> -->
                 <div class="flex-row">
                     <div class="testimonial-logo">
                         <img src="./img/testi-removebg-preview.png" alt="">
@@ -233,10 +235,23 @@
                     <div class="heading-container">
                         <h2>Testimonials</h2>
                     </div>
-                    <div class="testimonial-contents">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora animi et cum
-                            totam eos assumenda illo in impedit, aspernatur minus, repellat laborum accusamus suscipit
-                            aut voluptatum quasi fugiat unde ipsa possimus dolor!</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora animi et
+                            cum
+                            totam eos assumenda illo in impedit, aspernatur minus, repellat laborum accusamus
+                            suscipit
+                            aut voluptatum quasi fugiat unde ipsa possimus dolor!</p></div>
+                        <div class="item"><p> ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora animi et
+                            cum
+                            totam eos assumenda illo in impedit, aspernatur minus, repellat laborum accusamus
+                            suscipit
+                            aut voluptatum quasi fugiat unde ipsa possimus dolor!</p></div>
+                        <div class="item"><p> dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora animi et
+                            cum
+                            totam eos assumenda illo in impedit, aspernatur minus, repellat laborum accusamus
+                            suscipit
+                            aut voluptatum quasi fugiat unde ipsa possimus dolor!</p></div>
+
                     </div>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -247,7 +262,7 @@
                     </div>
                     <div class="cta"><a href="">Testimonials +</a></div>
                 </div>
-                <span class="slider slid"><i class="fa-regular fa-greater-than"></i></span>
+                <!-- <span class="slider slid" onclick="controller(1)"><i class="fa-regular fa-greater-than"></i></span> -->
             </div>
         </section>
         <!-- /section5  Testimonials-->
@@ -421,5 +436,26 @@
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
 <script src="./js/script.js"></script>
+
 </html>

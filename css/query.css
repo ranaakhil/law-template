@@ -78,11 +78,15 @@
         padding: 0 2rem;
 
     }
-    .section5 .testimonial-contents p {
+    .section5 .item p {
         font-size: 1.1rem;
         line-height: 2rem;
     }
-    .section5 .slider i {
+    .section5 .owl-prev span {
+        font-size: 1.2rem;
+        padding: 0.7rem;
+    }
+    .section5 .owl-next span {
         font-size: 1.2rem;
         padding: 0.7rem;
     }
@@ -309,11 +313,15 @@
         padding: 0 2rem;
 
     }
-    .section5 .testimonial-contents p {
+    .section5 .item p {
         font-size: 1.063rem;
         line-height: 1.875rem;
     }
-    .section5 .slider i {
+    .section5 .owl-prev span {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .section5 .owl-next span {
         font-size: 1rem;
         padding: 0.5rem;
     }
@@ -578,11 +586,15 @@
         padding: 0 2rem;
 
     }
-    .section5 .testimonial-contents p {
+    .section5 .item p {
         font-size: 1.063rem;
         line-height: 1.875rem;
     }
-    .section5 .slider i {
+    .section5 .owl-prev span {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .section5 .owl-next span {
         font-size: 1rem;
         padding: 0.5rem;
     }
