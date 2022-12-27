@@ -137,10 +137,14 @@ input,textarea:focus {
     border-color: var(--clr-lightblack);
     outline: none;
     
+    
+}
+input,textarea{
+    padding: 1rem;
 }
 ::placeholder{
     text-transform: uppercase;
-    padding: 1rem;
+    /* padding: 1rem; */
     
 }
 /* /Global */
@@ -545,13 +549,7 @@ input,textarea:focus {
     left: 49.8%;
     height: 150px;
 }
-.section5 .owl-prev{
-    /* max-width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px; */
-}
+
 .section5 .owl-prev span{
     position: absolute;
     left: -2%;
