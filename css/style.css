@@ -324,14 +324,6 @@ input,textarea{
     line-height: 2rem;
     margin-bottom: 2rem;
  }
-
-
-.section2 .column img {
-    margin-top: 20rem;
-    min-height: 350px;
-    
-    
-}
 .section2{
     position: relative;
 }
@@ -345,20 +337,33 @@ input,textarea{
   left: 25.6%;
   
 }
-
-
-.section2 .flex{
- position: absolute;
- left: 37.5%;
- top: 77%;
+.section2 .column .owl-carousel .item img {
+    margin-top: 20rem;
+    min-height: 350px;
+    max-width: 350px;
+    
+    
 }
-.section2 .column .flex .slide{
-    border: 2px solid var(--clr-lightbrown);
-    padding: 0.4rem;
-    margin: 1rem;
+.section2 .column .owl-carousel{
+    max-width: 350px;
 }
-.section2 .column .flex .slide i{
+.section2 .owl-prev span{
     color: var(--clr-lightbrown);
+    border: 2px solid var(--clr-lightbrown);
+    padding: 0.6rem;
+    margin: 1rem ;
+    position: absolute;
+    right: -21%;
+    top: 85%;
+}
+.section2 .owl-next span{
+    color: var(--clr-lightbrown);
+    border: 2px solid var(--clr-lightbrown);
+    padding: 0.6rem;
+    margin: 1rem;
+    position: absolute;
+    right: -21%;
+    top: 78%;
 }
 .section2 .team{
     font-size: 2.55rem;
