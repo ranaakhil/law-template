@@ -140,9 +140,12 @@
     .section8 .container .column .grid-row {
         padding-left: 0;
     }
+    .custom-shape-divider-top-1671184193 svg {
+        height: 156px;
+    }
     .footer-section .angle-up {
         left: 46.5%;
-        top: 28%;
+        top: 16%;
     }
     .map{
         width:500px;
@@ -695,9 +698,9 @@
         height: 110px;
     }
     .footer-section .angle-up {
-        left: 42.5%;
-        top: 9%;
-    }
+        left: 39.5%;
+        top: 7%;
+     }
     .footer-section .flex-row {
         padding: 15rem 0 0rem 0
     }
